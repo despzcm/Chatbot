@@ -1,6 +1,28 @@
 # 🤖ChatBot
 
+## 聊天机器人与虚拟人
+* 聊天机器人运行文件：chatbot.py
+
+代码运行方法：
+```
+python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
+                    --ckp_path $YOUR_CHECKPOINT_PATH  \
+                    --summary_model_path $YOUR_SUMMARY_MODEL_PATH\
+                    --knowledge_path $YOUR_KNOWLEDGE_PATH\
+                    --summary_knowledge_path $YOUR_SUMMARY_KNOWLEDGE_PATH\
+```
+
+* 虚拟人运行文件: VirtualCharacter.py
+* 我们构建了《孤独摇滚》中的后藤一里
+* 代码运行方法:
+```
+python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
+                            --ckp_path $YOUR_CHECKPOINT_PATH  \
+```
+
+
 ## LLM基底模型的指令微调
+### 全量微调
 * 微调模型代码文件：finetune_model.py
 * 我们使用[alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)作为我们的指令微调数据集
 
@@ -14,22 +36,9 @@ python finetune_model.py --model_path $YOUR_MODEL_PATH  \
 
 模型链接：[model link](https://jbox.sjtu.edu.cn/l/812Wce)
 
-
-
-## 构建聊天机器人
-### 主要功能文件
-* 聊天机器人运行文件：chatbot.py
-
-代码运行方法：
-```
-python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
-                    --ckp_path $YOUR_CHECKPOINT_PATH  \
-                    --summary_model_path $YOUR_SUMMARY_MODEL_PATH\
-                    --knowledge_path $YOUR_KNOWLEDGE_PATH\
-                    --summary_knowledge_path $YOUR_SUMMARY_KNOWLEDGE_PATH\
-```
-
+### LoRA微调
 * LoRA微调模型代码文件：finetune_lora.py
+* 我们使用[alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)作为我们的指令微调数据集
 
 代码运行方法：
 ```
@@ -39,14 +48,8 @@ python finetune_lora.py --model_path $YOUR_MODEL_PATH  \
                          --output_path $YOUR_CHECKPOINT_SAVE_PATH\
 ```
 
-* 虚拟人运行文件: VirtualCharacter.py
-* 代码运行方法:
-```
-python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
-                            --ckp_path $YOUR_CHECKPOINT_PATH  \
-```
 
-### 附加文件
+## 附加文件
 * `RAG.py` 外部知识增加
 * `corpus_process.py` 简单语料分割
 * `history_sumary.py` 历史信息总结
@@ -60,7 +63,7 @@ python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
 
 
 
-### 模型链接：
+## 模型链接：
 [model link](https://jbox.sjtu.edu.cn/l/812Wce)
 * `Qwen2.5-1.5B-lora` LoRA训练模型checkpoints
 * `Qwen2.5-1.5B-Instruct-bocchi3` 虚拟人模型checkpoints
