@@ -1,7 +1,8 @@
 # 🤖ChatBot
 
-## 大作业一：LLM基底模型的指令微调
+## LLM基底模型的指令微调
 * 微调模型代码文件：finetune_model.py
+* 我们使用[alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)作为我们的指令微调数据集
 
 代码运行方法：
 ```
@@ -15,7 +16,7 @@ python finetune_model.py --model_path $YOUR_MODEL_PATH  \
 
 
 
-## 大作业二：构建聊天机器人
+## 构建聊天机器人
 ### 主要功能文件
 * 聊天机器人运行文件：chatbot.py
 
@@ -63,3 +64,19 @@ python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
 [model link](https://jbox.sjtu.edu.cn/l/812Wce)
 * `Qwen2.5-1.5B-lora` LoRA训练模型checkpoints
 * `Qwen2.5-1.5B-Instruct-bocchi3` 虚拟人模型checkpoints
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
