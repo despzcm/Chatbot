@@ -15,6 +15,10 @@ python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
 
 ### “虚拟人”聊天机器人
 * 我们构建了《孤独摇滚》中的后藤一里
+
+![bocchi](/bocchi.jpg)
+
+
 * 虚拟人运行文件: VirtualCharacter.py
 * 代码运行方法:
 ```
