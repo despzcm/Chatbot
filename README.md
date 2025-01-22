@@ -1,6 +1,7 @@
 # 🤖ChatBot
 
 ## 聊天机器人与虚拟人
+### 基础聊天机器人
 * 聊天机器人运行文件：chatbot.py
 
 代码运行方法：
@@ -12,8 +13,9 @@ python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
                     --summary_knowledge_path $YOUR_SUMMARY_KNOWLEDGE_PATH\
 ```
 
-* 虚拟人运行文件: VirtualCharacter.py
+### “虚拟人”聊天机器人
 * 我们构建了《孤独摇滚》中的后藤一里
+* 虚拟人运行文件: VirtualCharacter.py
 * 代码运行方法:
 ```
 python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
