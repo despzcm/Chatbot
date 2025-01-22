@@ -13,9 +13,7 @@ python finetune_model.py --model_path $YOUR_MODEL_PATH  \
 
 模型链接：[model link](https://jbox.sjtu.edu.cn/l/812Wce)
 
-模型太大，这里只上传两个训练完的模型：
-* `0.5B-epoch3-outputLossOnly`  为只计算outputLoss的版本，训练三个epoch
-* `0.5B-epoch3-AllLoss`  为计算全部loss的版本，训练三个epoch
+
 
 ## 大作业二：构建聊天机器人
 ### 主要功能文件
