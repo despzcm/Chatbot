@@ -1,4 +1,4 @@
-# ChatBot
+# 🤖ChatBot
 
 ## 大作业一：LLM基底模型的指令微调
 * 微调模型代码文件：finetune_model.py
