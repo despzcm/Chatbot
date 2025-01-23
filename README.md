@@ -1,7 +1,7 @@
 # 🤖ChatBot
 
 ## Chatbot and Virtual Human
-### Basic Chatbot
+### 🕹️Basic Chatbot
 * Chatbot Execution File：`chatbot.py`
 
 Code Execution Method：
@@ -20,7 +20,7 @@ python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
 - Type `\RAG_off` to disable external knowledge augmentation mode.
 
 
-### Virtual Human Chatbot
+### 🎸Virtual Human Chatbot
 > We built the character of Ichiri Gotou from Bocchi the Rock！
 
 ![bocchi](/bocchi.jpg)
