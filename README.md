@@ -34,7 +34,7 @@ python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
 ```
 
 
-## Instruction Fine-tuning of the LLM Base Model
+## 🚀Instruction Fine-tuning of the LLM Base Model
 > We use [Qwen-2.5-0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B)、[Qwen-2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B) as our base model.
 >
 > We use [alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned) as our instruction fine-tuning dataset.
