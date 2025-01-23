@@ -1,10 +1,10 @@
 # 🤖ChatBot
 
-## 聊天机器人与虚拟人
-### 基础聊天机器人
-* 聊天机器人运行文件：chatbot.py
+## Chatbot and Virtual Human
+### Basic Chatbot
+* Chatbot Execution File：chatbot.py
 
-代码运行方法：
+Code Execution Method：
 ```
 python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
                     --ckp_path $YOUR_CHECKPOINT_PATH  \
@@ -13,26 +13,26 @@ python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
                     --summary_knowledge_path $YOUR_SUMMARY_KNOWLEDGE_PATH\
 ```
 
-### “虚拟人”聊天机器人
-* 我们构建了《孤独摇滚》中的后藤一里
+### Virtual Human Chatbot
+* We have built the character of Ichiri Gotou from Bocchi the Rock！
 
 ![bocchi](/bocchi.jpg)
 
 
-* 虚拟人运行文件: VirtualCharacter.py
-* 代码运行方法:
+* Virtual Human Execution File: VirtualCharacter.py
+* Code Execution Method:
 ```
 python VirtualCharacter.py  --model_path $YOUR_BASE_MODEL_PATH  \
                             --ckp_path $YOUR_CHECKPOINT_PATH  \
 ```
 
 
-## LLM基底模型的指令微调
-### 全量微调
-* 微调模型代码文件：finetune_model.py
-* 我们使用[alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)作为我们的指令微调数据集
+## Instruction Fine-tuning of the LLM Base Model
+### Full-Scale Fine-tuning
+* Fine-tuned Model Code File：finetune_model.py
+* We use [alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)as our instruction fine-tuning dataset.
 
-代码运行方法：
+Code Execution Method：
 ```
 python finetune_model.py --model_path $YOUR_MODEL_PATH  \
                          --data_path $TRAIN_DATA_PATH  \
@@ -46,7 +46,7 @@ python finetune_model.py --model_path $YOUR_MODEL_PATH  \
 * LoRA微调模型代码文件：finetune_lora.py
 * 我们使用[alpaca-cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)作为我们的指令微调数据集
 
-代码运行方法：
+Code Execution Method：
 ```
 python finetune_lora.py --model_path $YOUR_MODEL_PATH  \
                          --data_path $TRAIN_DATA_PATH  \
