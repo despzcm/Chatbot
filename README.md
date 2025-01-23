@@ -14,7 +14,7 @@ python chatbot.py   --model_path $YOUR_BASE_MODEL_PATH  \
 ```
 
 ### Virtual Human Chatbot
-* We have built the character of Ichiri Gotou from Bocchi the Rock！
+* We built the character of Ichiri Gotou from Bocchi the Rock！
 
 ![bocchi](/bocchi.jpg)
 
