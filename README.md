@@ -70,11 +70,7 @@ python finetune_lora.py --model_path $YOUR_MODEL_PATH  \
 
 ## Our RAG Frame
 
-> To improve retrieval accuracy in the Retrieval Pool, we use ChatGPT to summarize long knowledge entries, creating
-> a concise Summary Pool. We then embed both the summarized knowledge and the user's query using Qwen-1.5B with two
-> embedding methods: averaging the input embeddings and using the last hidden layer before output. We employ the FAISS
-> library for efficient retrieval, using vector dot product to measure similarity. The retrieved information is used
-> to assist the chatbot in generating more accurate responses.
+> To improve retrieval accuracy in the Retrieval Pool, we use ChatGPT to summarize long knowledge entries, creating a concise Summary Pool. We then embed both the summarized knowledge and the user's query using Qwen-1.5B with two embedding methods: averaging the input embeddings and using the last hidden layer before output. We employ the FAISS library for efficient retrieval, using vector dot product to measure similarity. The retrieved information is used to assist the chatbot in generating more accurate responses.
 
 ![RAG Frame](/RAG.png)
 
